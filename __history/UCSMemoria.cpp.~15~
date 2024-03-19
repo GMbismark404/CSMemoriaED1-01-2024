@@ -1,0 +1,120 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "UCSMemoria.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+CSMemoria::CSMemoria(){
+	mem = new NodoM[MAX];
+	for (int i = 0; i < MAX - 1; i++ ) {
+		mem[i].link = i + 1;
+	}
+    mem[MAX - 1].link = NULO;
+	libre = 0;
+}
+
+int CSMemoria::new_espacio(string cad) {
+	int cant = numero_ids(cad);
+	int dir = libre;
+	int d = dir;
+	for (int i = 0; i < cant - 1; i++) {
+		mem[d].id = obtener_id(cad, i);
+		d = mem[d].link;
+	}
+	libre = mem[d].link;
+	mem[d].link = NULO;
+	mem[d].id = obtener_id(cad, cant - 1);
+return dir;
+}
+
+void CSMemoria::delete_espacio(direccion dir) {
+	direccion x = dir;
+	while (mem[x].link != NULO) {
+		x = mem[x].link;
+	}
+	mem[x].link = libre;
+	libre = dir;
+}
+
+void CSMemoria::poner_dato(direccion dir, string cadena_id, int valor) {
+	for (direccion z = dir; z != NULO; z = mem[z].link) {
+		if (mem[z].id == cadena_id)
+			mem[z].dato = valor;
+	}
+}
+
+int CSMemoria::obtener_dato(direccion dir, string cadena_id) {
+	for (direccion z = dir; z != NULO; z = mem[z].link) {
+		if (mem[z].id == cadena_id)
+			return mem[z].dato;
+	}
+	return NULO;
+}
+
+int CSMemoria::espacio_disponible() {
+int contador = 0;
+	for (direccion x = libre; (x < MAX) && (x != NULO) ; x = mem[x].link) {
+		contador++;
+	}
+return contador;
+}
+
+int CSMemoria::espacio_ocupado() {
+	return MAX - espacio_disponible();
+}
+
+bool CSMemoria::dir_libre(direccion dir) {
+	for (direccion x = libre; (x != NULO); x = mem[x].link) {
+		if (x == dir)
+            return true;
+	}
+	return false;
+}
+//-------------------------- Mostrar CSMemoria ----------------------------
+void CSMemoria::Mostrar(TCanvas *canvas){
+int x1, x2, y1, y2;
+x1 = 400; x2 = 470; y1 = 50; y2 = 100;
+//int anchoCelda = 50;
+//int altoCelda = 50;
+
+	for (int fila = 0; fila < 2; ++fila) {
+		for (int columna = 0; columna < 4; ++columna) {
+			switch (columna) {
+				case 0: {
+
+				} break;
+				case 1: {
+					canvas->Pen->Color = clBlack; // Color del borde
+					canvas->Brush->Color = clLime; // Color de fondo
+					canvas->Rectangle(x1, y1, x2, y2); // Dibujar la celda
+				} break;
+				case 2: {
+					canvas->Pen->Color = clBlack; // Color del borde
+					canvas->Brush->Color = clYellow; // Color de fondo
+					canvas->Rectangle(x1, y1, x2, y2); // Dibujar la celda
+				} break;
+				case 3: {
+					canvas->Pen->Color = clBlack; // Color del borde
+					canvas->Brush->Color = clYellow; // Color de fondo
+					canvas->Rectangle(x1, y1, x2, y2); // Dibujar la celda
+                }
+            default:
+                ;
+			}
+		}
+
+	}
+//	canvas->Rectangle(x1, y1, x2, y2); // Dibujar la celda
+//			y1 += 50; y2 += 50;
+//		 Dibujar la celda con fondo de color Lime
+//		canvas->Pen->Color = clBlack; // Color del borde
+//		canvas->Brush->Color = clLime; // Color de fondo
+//		canvas->Rectangle(x1, y1, x2, y2); // Dibujar la celda
+//
+		// Actualizar las coordenadas para la siguiente fila de celdas
+//		y1 += 50; // Incrementar la coordenada y para la siguiente fila
+//		y2 += 50; // Incrementar la coordenada y para la siguiente fila
+
+}

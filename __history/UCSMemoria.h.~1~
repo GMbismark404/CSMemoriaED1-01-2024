@@ -1,0 +1,32 @@
+//---------------------------------------------------------------------------
+
+#ifndef UCSMemoriaH
+#define UCSMemoriaH
+#include "UConstantes.h"
+//---------------------------------------------------------------------------
+using namespace std;
+
+struct NodoM{
+	int dato;
+	string id;
+	direccion link;
+};
+
+class CSMemoria {
+private:
+	NodoM* mem;
+	direccion libre;
+public:
+	CSMemoria();
+	direccion new_espacio(string cadena);
+	void delete_espacio(direccion dir);
+	void poner_dato(direccion dir, string cadena_id, int valor);
+	int obtener_dato(direccion dir, string cadena_id);
+	int espacio_disponible();
+	int espacio_ocupado();
+	bool dir_libre(direccion dir);
+	int numero_ids(string cadena);
+	string obtener_id(string cadena, int pos);
+}
+
+#endif

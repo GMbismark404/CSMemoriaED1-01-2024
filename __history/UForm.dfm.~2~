@@ -1,0 +1,82 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 701
+  ClientWidth = 996
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object Button1: TButton
+    Left = 8
+    Top = 32
+    Width = 97
+    Height = 25
+    Cancel = True
+    Caption = 'Crear'
+    DisabledImageName = 'Crear'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 8
+    Top = 80
+    Width = 97
+    Height = 25
+    Caption = 'Pedir Espacio'
+    TabOrder = 1
+  end
+  object Button3: TButton
+    Left = 8
+    Top = 128
+    Width = 97
+    Height = 25
+    Caption = 'Liberar Espacio'
+    TabOrder = 2
+  end
+  object Button4: TButton
+    Left = 8
+    Top = 176
+    Width = 97
+    Height = 25
+    Caption = 'Poner Dato'
+    TabOrder = 3
+  end
+  object Button5: TButton
+    Left = 8
+    Top = 224
+    Width = 97
+    Height = 25
+    Caption = 'Mostrar'
+    TabOrder = 4
+  end
+  object Edit1: TEdit
+    Left = 128
+    Top = 33
+    Width = 121
+    Height = 23
+    TabOrder = 5
+    Text = 'Edit1'
+  end
+  object Edit2: TEdit
+    Left = 128
+    Top = 81
+    Width = 121
+    Height = 23
+    TabOrder = 6
+    Text = 'Edit2'
+  end
+  object Button6: TButton
+    Left = 8
+    Top = 272
+    Width = 97
+    Height = 25
+    Caption = 'Button6'
+    DisabledImageName = 'Button1'
+    TabOrder = 7
+  end
+end

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/03/18 15:54:24.000.387,=C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2024/03/18 15:54:24.000.450,=C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2024/03/18 15:56:47.000.556,C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\TDA-FORMPCH1.h</Transaction>
+    <Transaction>2024/03/18 15:56:47.000.559,C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\Project1.cbproj=C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\TDA-FORM.cbproj</Transaction>
+    <Transaction>2024/03/18 15:57:08.000.468,C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\Unit1.cpp=D:\CARRERA DE SISTEMAS\2024-1\INF220\TDA-FORM\Unit1.cpp</Transaction>
+    <Transaction>2024/03/18 15:57:08.000.489,C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\TDA-FORM.cbproj=D:\CARRERA DE SISTEMAS\2024-1\INF220\TDA-FORM\TDA-FORM.cbproj</Transaction>
+    <Transaction>2024/03/18 15:57:08.000.468,C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\CARRERA DE SISTEMAS\2024-1\INF220\TDA-FORM\Unit1.dfm</Transaction>
+    <Transaction>2024/03/18 15:57:08.000.468,C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\Unit1.h=D:\CARRERA DE SISTEMAS\2024-1\INF220\TDA-FORM\Unit1.h</Transaction>
+    <Transaction>2024/03/18 15:57:08.000.430,C:\Users\USUARIO\Documents\Embarcadero\Studio\Projects\TDA-FORMPCH1.h=D:\CARRERA DE SISTEMAS\2024-1\INF220\TDA-FORM\TDA-FORMPCH2.h</Transaction>
+    <Transaction>2024/03/18 15:57:36.000.590,D:\CARRERA DE SISTEMAS\2024-1\INF220\TDA-FORM\Unit1.dfm=D:\CARRERA DE SISTEMAS\2024-1\INF220\TDA-FORM\UForm.dfm</Transaction>
+    <Transaction>2024/03/18 15:57:36.000.590,D:\CARRERA DE SISTEMAS\2024-1\INF220\TDA-FORM\Unit1.cpp=D:\CARRERA DE SISTEMAS\2024-1\INF220\TDA-FORM\UForm.cpp</Transaction>
+    <Transaction>2024/03/18 15:57:36.000.590,D:\CARRERA DE SISTEMAS\2024-1\INF220\TDA-FORM\Unit1.h=D:\CARRERA DE SISTEMAS\2024-1\INF220\TDA-FORM\UForm.h</Transaction>
+    <Transaction>2024/03/18 15:58:23.000.685,=D:\CARRERA DE SISTEMAS\2024-1\INF220\TDA-FORM\Unit1.cpp</Transaction>
+    <Transaction>2024/03/18 15:58:34.000.742,D:\CARRERA DE SISTEMAS\2024-1\INF220\TDA-FORM\Unit1.cpp=D:\CARRERA DE SISTEMAS\2024-1\INF220\TDA-FORM\UCSMemoria.cpp</Transaction>
+    <Transaction>2024/03/18 15:58:34.000.742,D:\CARRERA DE SISTEMAS\2024-1\INF220\TDA-FORM\Unit1.h=D:\CARRERA DE SISTEMAS\2024-1\INF220\TDA-FORM\UCSMemoria.h</Transaction>
+    <Transaction>2024/03/18 16:01:27.000.557,=D:\CARRERA DE SISTEMAS\2024-1\INF220\TDA-FORM\Unit1.cpp</Transaction>
+    <Transaction>2024/03/18 16:01:41.000.804,D:\CARRERA DE SISTEMAS\2024-1\INF220\TDA-FORM\Unit1.h=D:\CARRERA DE SISTEMAS\2024-1\INF220\TDA-FORM\UConstantes.h</Transaction>
+    <Transaction>2024/03/18 16:01:41.000.804,D:\CARRERA DE SISTEMAS\2024-1\INF220\TDA-FORM\Unit1.cpp=D:\CARRERA DE SISTEMAS\2024-1\INF220\TDA-FORM\UConstantes.cpp</Transaction>
+  </Transactions>
+</BorlandProject>
